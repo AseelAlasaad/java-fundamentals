@@ -1,17 +1,17 @@
 package test;
 
 public class Review {
-	private String body;
-	private String author;
-	private int stars;
-	private Restaurant restaurant;
+	public String body;
+	public String author;
+	public int stars;
 	
-	public Review(String body,String author, int stars, Restaurant restaurant)
+	
+	public Review(String body,String author, int stars)
 	{
 		this.body=body;
 		this.author=author;
 		setStars(stars);
-		this.restaurant=restaurant;
+		
 		
 	}
 	   public int getStars() {
@@ -24,13 +24,10 @@ public class Review {
 	        }
 	        this.stars = stars;
 	    }
-	    public Restaurant getRestaurant() {
-	    	return this.restaurant;
-	    }
+	 
 	    
 	public String toString() {
-		return "Review: " + this.body + ", Number of stars: "+  this.stars +  " , Author: "+  this.author+ ":\n"+
-				"restaurant name is: "+ restaurant.getName();
+		return "Review: " + this.body + ", Number of stars: "+  this.stars +  " , Author: "+  this.author;
 	}
 	
 }

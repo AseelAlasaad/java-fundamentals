@@ -47,7 +47,7 @@ public class Restaurant {
 	}
 	
     public void addReview(Review review) {
-    	if(review.getRestaurant()==this) {
+    	if(!reviews.contains(review)) {
     		reviews.add(review);
     		updateRate();
     	}
