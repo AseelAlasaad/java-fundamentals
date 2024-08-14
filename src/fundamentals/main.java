@@ -1,4 +1,4 @@
-package test;
+package fundamentals;
 
 public class main {
 
